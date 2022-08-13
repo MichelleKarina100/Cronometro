@@ -1,0 +1,22 @@
+<%- include('layout.ejs'); %>
+<div id="contenedor">
+    <div id="contenedor-reloj">
+        <div class="reloj" id="Horas">00</div>
+        <div class="reloj" id="Minutos">:00</div>
+        <div class="reloj" id="Segundos">:00</div>
+        <div class="reloj" id="Centesimas">:00</div>    
+    </div>
+    <div id="contenedor-acciones">
+        <input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+        <input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar()" disabled>
+        <input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+        <input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>    
+    </div>
+    <div id="contenedor-tabla">
+        <table id="tabla-cronometro">
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
